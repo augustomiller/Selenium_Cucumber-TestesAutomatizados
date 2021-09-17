@@ -1,2 +1,2 @@
-# Selenium_Cucumber-automation
-Automação de testes com Java, Selenium e Cucumber
+# Automação de testes com Java, Selenium e Cucumber ☕️
+Projeto de Automação de testes com Java, Selenium e Cucumber.
