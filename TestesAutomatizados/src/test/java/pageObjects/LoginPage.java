@@ -5,27 +5,24 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage {
 	
-	@FindBy(name = "txtUsername")
+	@FindBy(id = "txtUsername")
 	private WebElement campoUsuario;
 	
-	@FindBy(name = "txtPassword")
+	@FindBy(id = "txtPassword")
 	private WebElement campoSenha;
-
-	@FindBy(name = "Submit")
+	
+	@FindBy(id = "btnLogin")
 	private WebElement botaoLogin;
 	
 	public void informarCampoUsuario(String usuario) {
-		
 		campoUsuario.sendKeys(usuario);
 	}
 	
 	public void informarCampoSenha(String senha) {
-		
 		campoSenha.sendKeys(senha);
 	}
 	
 	public void acionarBotaoLogin() {
-		
 		botaoLogin.click();
 	}
 	

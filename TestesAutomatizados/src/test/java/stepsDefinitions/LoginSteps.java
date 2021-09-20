@@ -28,7 +28,6 @@ public class LoginSteps {
 
 	@Entao("o sistema exibe a mensagem de usuario invalido.")
 	public void oSistemaExibeAMensagemDeUsuarioInvalido() {
-
 		assertEquals("Invalid credentials", driver.findElement(By.id("spanMessage")).getText());
 	}
 
