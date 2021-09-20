@@ -18,6 +18,6 @@ public class TestandoActionsSteps {
 
 	@Entao("o sistema apresentara a tela custonField")
 	public void oSistemaApresentaraATelaCustonField() {
-	    assertEquals("Add Custom Field", driver.findElement(By.id("heading")).getText());
+	    assertEquals("Remaining number of custom fields: 9", driver.findElement(By.id("fieldsleft")).getText());
 	}
 }

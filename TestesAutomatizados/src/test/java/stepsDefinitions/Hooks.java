@@ -1,15 +1,15 @@
 package stepsDefinitions;
 
-import static utils.Utils.Na;
-import static utils.Utils.acessarSistema;
+import static utils.Utils.*;
 
+import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import pageObjects.LoginPage;
 
 public class Hooks { 
 	
-	@Before()
+	@Before(value = "not @login")
 	public void setup() {
 		acessarSistema();
 		Na(LoginPage.class).realizarLogin("Admin", "admin123");
@@ -21,8 +21,9 @@ public class Hooks {
 	}
 	
 	@After
-	public void tearDown(){
-//		driver.quit();
+	public void tearDown(Scenario scenario){
+		capturarTela(scenario);
+		driver.quit();
 	}
 
 }

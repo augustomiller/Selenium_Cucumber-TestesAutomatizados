@@ -33,7 +33,7 @@ public class LoginSteps {
 
 	@Entao("o sistema exibe o usuario autenticado.")
 	public void oSistemaExibeOUsuarioAutenticado() {
-		assertEquals("Welcome Paul", driver.findElement(By.id("welcome")).getText());
+		assertEquals("Welcome tom", driver.findElement(By.id("welcome")).getText());
 	}
 
 }
